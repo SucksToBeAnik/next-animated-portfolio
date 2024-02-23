@@ -121,7 +121,7 @@ function Navbar() {
         {/* Menu Button */}
         <button
           onClick={() => setOpen((prev) => !prev)}
-          className="h-8 w-10 flex flex-col justify-between z-50 relative"
+          className="h-8 w-10 flex flex-col justify-between z-[100] relative"
         >
           <motion.div
             variants={topVariants}

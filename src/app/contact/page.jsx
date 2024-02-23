@@ -3,7 +3,7 @@
 import PageTransitionProvider from "@/components/pageTransitionProvider";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function ConatctPage() {
   const text = "Leave a Message!";
@@ -14,21 +14,26 @@ function ConatctPage() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setError(false)
-    setSuccess(false)
+    setError(false);
+    setSuccess(false);
 
     emailjs
-      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, formRef.current, {
-        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-      })
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        formRef.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
-          setSuccess(true )
-          formRef.current.reset()
+          setSuccess(true);
+          formRef.current.reset();
         },
         (error) => {
-            setError(true)
-        },
+          setError(true);
+        }
       );
   };
 
@@ -58,22 +63,24 @@ function ConatctPage() {
         <form
           ref={formRef}
           onSubmit={sendEmail}
-          className="h-1/2 lg:min-h-[calc(100vh-6rem)] lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-10"
+          className="h-1/2 lg:min-h-[calc(100vh-6rem)] lg:w-1/2 bg-red-50 rounded-xl font-semibold flex flex-col gap-8 justify-center p-8 my-8"
         >
-          <span>Dear Anik,</span>
+          <span>Hey Anik,</span>
           <textarea
-            rows="6"
+            rows="4"
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="message"
+            placeholder="Write a message..."
           />
           <span>My email address is:</span>
           <input
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
             name="user_email"
+            placeholder="Provide your email...."
           />
-          <span>Regards</span>
-          <button className="bg-purple-200 rounded p-2 font-semibold text-gray-600">
+          <span>Best Wishes!</span>
+          <button className="bg-purple-200 rounded p-2 font-semibold text-xl uppercase text-gray-600 hover:scale-105 transition-all">
             Send
           </button>
 

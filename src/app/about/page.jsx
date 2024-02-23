@@ -7,7 +7,19 @@ import { useRef } from "react";
 import Link from "next/link";
 
 function AboutPage() {
-  const skillList = ["HTML", "CSS", "Javascript", "Python", "SQL"];
+  const skillList = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Python",
+    "SQL",
+    "C",
+    "Tailwind",
+    "ReactJS",
+    "NextJS",
+    "FastAPI",
+    "Django",
+  ];
 
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
@@ -18,30 +30,33 @@ function AboutPage() {
   return (
     <PageTransitionProvider>
       {/* Container */}
-      <div className="lg:flex" ref={targetRef} >
+      <div className="lg:flex" ref={targetRef}>
         {/* Text container */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-24 xl:p-48 flex flex-col gap-20 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           <div className="flex flex-col gap-y-12">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              illo soluta, repudiandae in neque harum aspernatur corporis, vel
-              tenetur, animi maxime nihil et. Adipisci soluta a ullam
-              perspiciatis, et at?
+              I like to code as much as I like to watch a good movie on a late night of a weekend. Sounds fun right? Oh, web dev? I am learning it as a hobby for sometime now and it amazes me that how much there is to learn. But it is the fun part for me. I love learning new things. Anyways, explore rest of the site. See ya!
             </p>
 
-            <span className="italic">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
-              deserunt.
+            <span className="italic font-semibold">
+               I...Declare...Bankruptcy! <span className="font-normal">- The Great Michael Scott</span>
             </span>
 
-            <Link href='#skill' className="p-2 border border-black rounded-full self-start">
+            <Link
+              href="#skill"
+              className="p-2 border border-black rounded-full self-start animate-bounce transition-all"
+            >
               &darr;
             </Link>
           </div>
 
           {/* SKILLS container */}
-          <div id="skill" className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div
+            id="skill"
+            className="flex flex-col gap-12 justify-center"
+            ref={skillRef}
+          >
             <motion.h1
               initial={{ x: "-400px" }}
               animate={skillRefInView ? { x: 0 } : {}}

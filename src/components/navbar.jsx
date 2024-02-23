@@ -97,18 +97,11 @@ function Navbar() {
 
       {/* Social Media Links */}
       <div className="hidden md:flex gap-4 md:w-1/3 justify-center">
-        <Link href="#">
-          <Image src="/github.png" alt="Github Icon" width={24} height={24} />
+        <Link target="_blank" href="https://github.com/SucksToBeAnik">
+          <Image src="/github.png" alt="Github Icon" width={24} height={24} className="animate-bounce transition-all duration-75" />
         </Link>
-        <Link href="#">
-          <Image
-            src="/facebook.png"
-            alt="Facebook Icon"
-            width={24}
-            height={24}
-          />
-        </Link>
-        <Link href="#">
+        
+        <Link target="_blank" href="https://www.linkedin.com/in/al-jami-islam-anik-485758285/">
           <Image
             src="/linkedin.png"
             alt="Linkedin Icon"

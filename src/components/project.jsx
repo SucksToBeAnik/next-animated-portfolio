@@ -18,12 +18,12 @@ function Project({ project }) {
           />
         </div>
 
-        <h1 className="text-3xl text-stone-900 font-semibold tracking-wider uppercase text-center">
+        <h1 className="text-3xl md:text-4xl text-stone-900 font-semibold tracking-wider uppercase text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-orange-500">
           {project.title}
         </h1>
-        <div className="flex flex-col md:flex-row md:justify-center gap-2 text-center">
-            {project.liveLink && <Link href={project.liveLink} className="p-2 bg-black rounded text-white uppercase">SEE LIVE</Link>}
-            {project.codeLink && <Link href={project.codeLink} className="p-2 bg-black rounded text-white uppercase">SEE CODE</Link>}
+        <div className="flex flex-col md:flex-row md:justify-center gap-8 text-center font-semibold">
+            {project.liveLink && <Link target="_blank" href={project.liveLink} className="p-2 md:p-4 bg-gradient-to-r from-purple-500 to-orange-200 shadow-md rounded text-white uppercase">SEE LIVE</Link>}
+            {project.codeLink && <Link target="_blank" href={project.codeLink} className="p-2 md:p-4 bg-white shadow-md rounded text-black uppercase">SEE CODE</Link>}
             
         </div>
       </div>

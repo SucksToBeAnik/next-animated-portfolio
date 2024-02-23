@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const links = [
   { url: "/", title: "Home" },
@@ -13,8 +14,11 @@ const links = [
   { url: "/portfolio", title: "Portfolio" },
 ];
 
+
+
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathName = usePathname()
 
   const topVariants = {
     closed: {
@@ -143,11 +147,13 @@ function Navbar() {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute inset-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-10"
+            className="absolute inset-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-50"
           >
-            {links.map((link) => (
-              <motion.div variants={listItemVariants} key={link.url}>
-                <Link href={link.url} className="p-1">
+            {links.map((link,idx) => (
+              <motion.div variants={listItemVariants} key={idx}>
+                <Link onClick={()=>{
+                  link.url === pathName ? setOpen(false) : ''
+                }}  href={link.url} className="p-1 border-2 border-white">
                   {link.title}
                 </Link>
               </motion.div>

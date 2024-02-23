@@ -82,7 +82,7 @@ function AboutPage() {
           </div>
         </div>
         {/* SVG container */}
-        <div className="hidden lg:block w-1/3 xl:w-1/2 top-0 sticky">
+        <div className="hidden lg:block w-1/3 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>

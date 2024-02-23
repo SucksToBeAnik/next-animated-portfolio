@@ -35,12 +35,17 @@ function AboutPage() {
         <div className="p-4 sm:p-8 md:p-12 lg:p-24 xl:p-48 flex flex-col gap-20 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           <div className="flex flex-col gap-y-12">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-            <p className="text-lg">
-              I like to code as much as I like to watch a good movie on a late night of a weekend. Sounds fun right? Oh, web dev? I am learning it as a hobby for sometime now and it amazes me that how much there is to learn. But it is the fun part for me. I love learning new things. Anyways, explore rest of the site. See ya!
+            <p className="p-4 md:text-md rounded-md shadow-xl">
+              I like to code as much as I like to watch a good movie on a late
+              night of a weekend. Sounds fun right? Oh, web dev? I am learning
+              it as a hobby for sometime now and it amazes me that how much
+              there is to learn. But it is the fun part for me. I love learning
+              new things. Anyways, explore rest of the site. See ya!
             </p>
 
             <span className="italic font-semibold">
-               I...Declare...Bankruptcy! <span className="font-normal">- The Great Michael Scott</span>
+              I...Declare...Bankruptcy!{" "}
+              <span className="font-normal">- The Great Michael Scott</span>
             </span>
 
             <Link

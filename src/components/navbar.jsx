@@ -153,7 +153,7 @@ function Navbar() {
               <motion.div variants={listItemVariants} key={idx}>
                 <Link onClick={()=>{
                   link.url === pathName ? setOpen(false) : ''
-                }}  href={link.url} className="p-1 border-2 border-white">
+                }}  href={link.url} className="p-1">
                   {link.title}
                 </Link>
               </motion.div>

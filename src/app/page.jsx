@@ -32,6 +32,8 @@ const Homepage = () => {
       </div>
       {/* Text Container */}
     </div>
+
+
     </PageTransitionProvider>
   );
 };

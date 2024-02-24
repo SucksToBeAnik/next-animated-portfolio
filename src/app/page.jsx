@@ -18,21 +18,22 @@ const Homepage = () => {
             Let us appreciate the simple things in life!
           </h1>
           <p className="text-xl">
-            Hello there! Over here! It is nice of you to visit my work. I know it is not
-            much. But hey! I am trying to do better every single day.
+            Hello there! Over here! It is nice of you to visit my work. I know
+            it is not much. But hey! I am trying to do better every single day.
           </p>
           <div className="flex gap-4 justify-between w-full sm:w-auto">
             <Link
               href="/portfolio"
-              className="p-2 md:p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-transparent hover:text-black  transition-all"
+              className="p-2 md:p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-transparent hover:text-black  transition-all uppercase"
             >
-              View My Work
+              See My Work
             </Link>
             <Link
-              href="/contact"
-              className="p-2 md:p-4 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all"
+              target="_blank"
+              href="https://drive.google.com/file/d/1zIMK7tOat_8sfPrkcy0VKohDiDLBTztp/view?usp=sharing"
+              className="p-2 md:p-4 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all uppercase"
             >
-              Contact Me
+              See My Resume
             </Link>
           </div>
         </div>

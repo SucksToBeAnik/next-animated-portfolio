@@ -1,6 +1,6 @@
 # Animated Portfolio
 
-<hr />
+[**SEE LIVE**](https://anik-has-a-portfolio.vercel.app/)
 
 **Framework**
 

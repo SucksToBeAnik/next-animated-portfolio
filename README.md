@@ -1,14 +1,18 @@
 # Animated Portfolio
 
-[See Live](https://www.anik-has-a-portfolio.vercel.app)
+[See Live](anik-has-a-portfolio.vercel.app)
 
 <hr />
 
 **Framework**
 
-* NextJS
+* `NextJS`
 
 **Modules**
 
-* Framer Motion
-* Tailwind CSS
+* `Framer Motion`
+* `Tailwind CSS`
+
+**Note**
+
+This portfolio is temporary. 

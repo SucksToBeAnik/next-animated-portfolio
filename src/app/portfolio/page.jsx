@@ -16,10 +16,10 @@ function PortfolioPage() {
     },
     {
       id: 2,
-      title: "Markdown BLOG",
-      image: "/markdown_blog.png",
-      liveLink: "https://md-blog-basic.netlify.app/",
-      codeLink: "https://github.com/SucksToBeAnik/markdown-blog-REACT",
+      title: "Art & Craft Eshop Frontend",
+      image: "/art_n_craft_frontend.png",
+      liveLink: "https://art-craft-eshop-frontend.vercel.app/",
+      codeLink: "https://github.com/SucksToBeAnik/art-craft-eshop-frontend",
     },
     {
       id: 3,
@@ -37,18 +37,18 @@ function PortfolioPage() {
     },
     {
       id: 5,
-      title: "Blog API",
-      image: "/blog_api.png",
-      liveLink: "",
-      codeLink: "https://github.com/SucksToBeAnik/blog-api-FASTAPI",
+      title: "Art & Craft Eshop Backend",
+      image: "/art_n_craft_backend.png",
+      liveLink: "https://art-craft-eshop-backend.onrender.com/docs",
+      codeLink: "https://github.com/SucksToBeAnik/art-craft-eshop-backend",
     },
     {
       id: 6,
-      title: "Travel with Tailwind",
-      image: "/travel_tailwind.png",
-      liveLink: "https://travelwithtailwind.netlify.app/",
-      codeLink: "https://github.com/SucksToBeAnik/travel-landing-page-TAILWIND",
-    },
+      title: "Markdown BLOG",
+      image: "/markdown_blog.png",
+      liveLink: "https://md-blog-basic.netlify.app/",
+      codeLink: "https://github.com/SucksToBeAnik/markdown-blog-REACT",
+    }
   ];
   const ref = useRef(null);
   const { scrollYProgress } = useScroll(ref);

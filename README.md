@@ -1,5 +1,7 @@
 # Animated Portfolio
 
+`COMPLETED`
+
 [**SEE LIVE**](https://anik-has-a-portfolio.vercel.app/)
 
 **Framework**

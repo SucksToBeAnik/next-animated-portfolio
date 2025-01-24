@@ -24,7 +24,7 @@ function PortfolioPage() {
     {
       id: 3,
       title: "Note N Code",
-      image: "/note-n-code.png",
+      image: "/note_n_code.png",
       liveLink: "https://note-n-code.vercel.app/",
       codeLink: "https://github.com/SucksToBeAnik/note-code-ReactJS",
     },
@@ -36,7 +36,8 @@ function PortfolioPage() {
     <PageTransitionProvider>
       <div className="h-[calc(800vh-6rem)] relative" ref={ref}>
         <div className="min-h-screen min-w-screen flex items-center justify-center text-4xl md:text-5xl lg:text-8xl text-center text-stone-900 tracking-wider ">
-          MY PROJECTS
+          MY PROJECTS{" "}
+          <span className="text-3xl md:text-4xl lg:text-6xl ml-4">▼</span>
         </div>
 
         <div className="flex h-screen sticky top-0 overflow-hidden">

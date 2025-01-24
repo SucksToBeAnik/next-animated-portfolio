@@ -9,46 +9,25 @@ function PortfolioPage() {
   const projects = [
     {
       id: 1,
+      title: "Thesis Jatra",
+      image: "/thesis-jatra.png",
+      liveLink: "https://thesis-jatra-frontend-next-js.vercel.app/",
+      codeLink: "https://github.com/SucksToBeAnik/thesis-jatra-frontend-NextJS",
+    },
+    {
+      id: 2,
       title: "WatchHUB",
       image: "/watch_hub.png",
       liveLink: "https://watch-hub.netlify.app/",
       codeLink: "https://github.com/SucksToBeAnik/movie-hub-REACT",
     },
     {
-      id: 2,
-      title: "Art & Craft Eshop Frontend",
-      image: "/art_n_craft_frontend.png",
-      liveLink: "https://art-craft-eshop-frontend.vercel.app/",
-      codeLink: "https://github.com/SucksToBeAnik/art-craft-eshop-frontend",
-    },
-    {
       id: 3,
-      title: "React PIZZA",
-      image: "/react_pizza.png",
-      liveLink: "https://fast-react-pizza-theta-rouge.vercel.app/",
-      codeLink: "https://github.com/SucksToBeAnik/fast-react-pizza-REACT",
+      title: "Note N Code",
+      image: "/note-n-code.png",
+      liveLink: "https://note-n-code.vercel.app/",
+      codeLink: "https://github.com/SucksToBeAnik/note-code-ReactJS",
     },
-    {
-      id: 4,
-      title: "Task Manager API",
-      image: "/task_manager_api.png",
-      liveLink: "https://task-manager-backend-fastapi.onrender.com",
-      codeLink: "https://github.com/SucksToBeAnik/task-manager-backend-FastAPI",
-    },
-    {
-      id: 5,
-      title: "Art & Craft Eshop Backend",
-      image: "/art_n_craft_backend.png",
-      liveLink: "https://art-craft-eshop-backend.onrender.com/docs",
-      codeLink: "https://github.com/SucksToBeAnik/art-craft-eshop-backend",
-    },
-    {
-      id: 6,
-      title: "Markdown BLOG",
-      image: "/markdown_blog.png",
-      liveLink: "https://md-blog-basic.netlify.app/",
-      codeLink: "https://github.com/SucksToBeAnik/markdown-blog-REACT",
-    }
   ];
   const ref = useRef(null);
   const { scrollYProgress } = useScroll(ref);
